@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 
 
-from models.prompt_tts_modified.modules.encoder import Encoder
-from models.prompt_tts_modified.modules.variance import DurationPredictor, VariancePredictor
-from models.prompt_tts_modified.modules.alignment import AlignmentModule, GaussianUpsampling, viterbi_decode, average_by_duration
-from models.prompt_tts_modified.modules.initialize import initialize
+from src.EmotiVoice.models.prompt_tts_modified.modules.encoder import Encoder
+from src.EmotiVoice.models.prompt_tts_modified.modules.variance import DurationPredictor, VariancePredictor
+from src.EmotiVoice.models.prompt_tts_modified.modules.alignment import AlignmentModule, GaussianUpsampling, viterbi_decode, average_by_duration
+from src.EmotiVoice.models.prompt_tts_modified.modules.initialize import initialize
 
 class PromptTTS(nn.Module):
     def __init__(self, config) -> None:
